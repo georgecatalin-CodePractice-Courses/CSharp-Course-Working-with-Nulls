@@ -11,7 +11,9 @@ namespace GameConsole
         static void Main(string[] args)
         {
             PlayerCharacter player = new PlayerCharacter();
-            player.Name = "Sara";
+            //player.Name = "Sara";
+            //player.Name = "";
+            player.Name = null;
 
             PlayerDisplayer.Write(player);
 
