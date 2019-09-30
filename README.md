@@ -10,6 +10,7 @@ Course Overview
 Working with Nullable Value Types and Strings
 30m 12s
 **
+
 Introduction
 1m 24s
 Course Outline
@@ -37,6 +38,7 @@ Summary
 Accessing and Checking for Null Values
 29m 53s
 **
+
 Introduction
 1m 42s
 More on Nullable<T>
@@ -68,6 +70,7 @@ Summary
 Eliminating Null Reference Exceptions
 23m 50s
 **
+
 Introduction
 1m 45s
 Introducing the Null Object Pattern
