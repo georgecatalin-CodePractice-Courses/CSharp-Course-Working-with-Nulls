@@ -19,35 +19,24 @@ namespace GameConsole
                 Console.WriteLine(playerCharacter.Name);
             }
 
+            //int days = playerCharacter.DaysSinceLastLogin.GetValueOrDefault(-1);
 
-            
+             int days =     playerCharacter.DaysSinceLastLogin ?? -1;  //using the Null-coalescing operator like this
 
-            //if (playerCharacter.DaysSinceLastLogin== -1)
-            //{
-            //    Console.WriteLine("No value for DaysSinceLastLogin" );
-            //}
-            //else
+            //int days =     playerCharacter.DaysSinceLastLogin.HasValue ? playerCharacter.DaysSinceLastLogin.Value : -1;  //using the conditional operator like this
+
+            Console.WriteLine($"{days} days since the last login");
+
+            //if (playerCharacter.DaysSinceLastLogin.HasValue)
             //{
             //    Console.WriteLine(playerCharacter.DaysSinceLastLogin);
-            //}
-
-            //if (playerCharacter.DateOfBirth==DateTime.MinValue)
-            //{
-            //    Console.WriteLine("No date of birth specified");
+                
             //}
             //else
             //{
-            //    Console.WriteLine(playerCharacter.DateOfBirth);
+            //    Console.WriteLine("No value for DaysSinceLastLogin");
+            //    Console.WriteLine(playerCharacter.DaysSinceLastLogin.GetValueOrDefault(10));
             //}
-
-            if (playerCharacter.DaysSinceLastLogin == null)
-            {
-                Console.WriteLine("No value for DaysSinceLastLogin");
-            }
-            else
-            {
-                Console.WriteLine(playerCharacter.DaysSinceLastLogin);
-            }
 
             if (playerCharacter.DateOfBirth == null)
             {
@@ -58,13 +47,13 @@ namespace GameConsole
                 Console.WriteLine(playerCharacter.DateOfBirth);
             }
 
-            if (playerCharacter.IsNoob== null)
+            if (playerCharacter.IsNoob == null)
             {
-                Console.WriteLine("Newbie status is unknown for this player") ;
+                Console.WriteLine("Newbie status is unknown for this player");
             }
-            else if (playerCharacter.IsNoob==true)
+            else if (playerCharacter.IsNoob == true)
             {
-                Console.WriteLine("Affirmative, this player is a newbie") ;
+                Console.WriteLine("Affirmative, this player is a newbie");
             }
             else
             {
