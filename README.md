@@ -6,10 +6,8 @@ Code practice associated with the Pluralsight course "Working with Nulls in C#"
 ## Course Overview
 1m 16s
 
-2
-Working with Nullable Value Types and Strings
+## 2 Working with Nullable Value Types and Strings
 30m 12s
-**
 
 Introduction
 1m 24s
@@ -44,10 +42,8 @@ Checking for Null or Empty Strings
 Summary
 1m 55s
 
-3
-Accessing and Checking for Null Values
+## 3 Accessing and Checking for Null Values
 29m 53s
-**
 
 Introduction
 1m 42s
@@ -88,10 +84,8 @@ Thread-safe Null Delegate Invocation
 Summary
 2m 22s
 
-4
-Eliminating Null Reference Exceptions
+## 4 Eliminating Null Reference Exceptions
 23m 50s
-**
 
 Introduction
 1m 45s
