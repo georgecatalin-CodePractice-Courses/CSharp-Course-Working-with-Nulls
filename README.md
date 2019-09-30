@@ -3,7 +3,7 @@ Code practice associated with the Pluralsight course "Working with Nulls in C#"
 
 # Table of contents
 
-Course Overview
+## Course Overview
 1m 16s
 
 2
