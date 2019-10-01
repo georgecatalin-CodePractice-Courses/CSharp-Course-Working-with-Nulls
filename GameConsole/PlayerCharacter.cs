@@ -19,13 +19,34 @@ namespace GameConsole
 
         public bool? IsNoob { get; set; }
 
-        public PlayerCharacter()
-        {
-            //this.DaysSinceLastLogin = -1;  //magic number
-            //this.DateOfBirth = DateTime.MinValue; //magic number
+        public int Health { get; set; } = 100;
 
-            this.DaysSinceLastLogin = null;
-            this.DateOfBirth = null;
+        private readonly ISpecialDefence _specialDefence;
+
+
+        public PlayerCharacter(ISpecialDefence specialDefence)
+        {
+            this._specialDefence = specialDefence;
+        }
+
+        public void Hit(int damage)
+        {
+            //int damageReduction = 0;
+
+            //if (_specialDefence != null)
+            //{
+            //    damageReduction = _specialDefence.CalculateDamageReduction(damage);
+            //}
+
+
+            //int totalDamageTaken = damage - damageReduction;
+
+            int totalDamageTaken = damage - _specialDefence.CalculateDamageReduction(damage);
+
+            Health -= totalDamageTaken;
+
+            Console.WriteLine($"{Name}'s health was reduced by {totalDamageTaken} to the value of {Health}");
+
         }
 
     }
